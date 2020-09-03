@@ -1,4 +1,4 @@
-# Amazon Reviews Analysis
+# Financial Loan Data Analysis
 
 ## Introduction
 Fico scores from 600 - 850 only.  

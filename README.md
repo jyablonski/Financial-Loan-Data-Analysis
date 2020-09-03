@@ -48,3 +48,6 @@ This is a similar graph, except showing # of loans rather than aggregate total $
 This is the distribution of all loans handed out by LendingClub in this dataset.  They range from $500 to $40,000, with the average being $15,047 and the median being $12,900.  
 
 ## Data Modeling
+
+
+## Insights & Recommendations

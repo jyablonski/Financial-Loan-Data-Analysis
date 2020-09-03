@@ -1,5 +1,6 @@
-# Financial-Loan-Data-Analysis
+# Amazon Reviews Analysis
 
+## Introduction
 Fico scores from 600 - 850 only.  
 
 Dataset https://www.kaggle.com/wordsforthewise/lending-club

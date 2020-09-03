@@ -5,7 +5,7 @@ Fico scores from 600 - 850 only.
 
 Dataset https://www.kaggle.com/wordsforthewise/lending-club 
 
-(Dataset)[https://www.kaggle.com/wordsforthewise/lending-club]
+[Dataset](https://www.kaggle.com/wordsforthewise/lending-club)
 ![employmentHistory6](https://user-images.githubusercontent.com/16946556/92037353-7d99e800-ed26-11ea-9ac5-4e4c84c42dec.png)
 ![gradebreakdown](https://user-images.githubusercontent.com/16946556/92037354-7e327e80-ed26-11ea-9452-975e1caa6aa9.png)
 ![LoanAmounts2](https://user-images.githubusercontent.com/16946556/92037357-7e327e80-ed26-11ea-8d6c-1069a46e07f0.png)

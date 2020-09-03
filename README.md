@@ -5,9 +5,9 @@
 This project goes through my processing for analyzing a 2.2 million row Dataset of approved financial loans.  The Dataset is available [here](https://www.kaggle.com/wordsforthewise/lending-club).
 
 ## The Data
-The Dataset comes from LendingClub, a company that provides loans to consumers and businesses.  There is only consumer loan data in this Dataset, and it comes with all sorts of characteristics like FICO scores, annual income, employment history, loan amount, and interest rate.  All consumers in this dataset have FICO scores ranging from 600 - 850.
+The Dataset comes from LendingClub, a company that provides loans to consumers and businesses.  There is only consumer loan data in this Dataset, and it comes with all sorts of characteristics of the client like FICO scores, annual income, employment history, and details of the loan like loan amount and interest rate.  All consumers in this dataset have FICO scores ranging from 600 - 850.
 
-The data only includes approved loans, not ones that were rejected.  Every consumer in this Dataset was approved for the loan they requested and some have completed the terms of the loan, while others are still paying it off.
+The data only includes approved loans, not ones that were rejected.  Every consumer in this Dataset was approved for the loan they requested and some have completed the terms of the loan, while others are still paying it off.  While there is a % Chance of Default value given in this project, that number is likely to increase as some clients still have a chance of defaulting.
 
 LendingClub also provides a "Grade" variable, which includes 7 groups that the company uses to grade the consumer on their level of risk.  A Grade "A" client is likely to be a good client and to pay off their loan, while a Grade "G" client indicates a high level of risk and the most likely to default.  
 

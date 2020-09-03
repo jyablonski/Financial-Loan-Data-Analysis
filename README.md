@@ -1,10 +1,16 @@
 # Financial Loan Data Analysis
 
 ## Introduction
-Fico scores from 600 - 850 only.  
-The Dataset is available [here](https://www.kaggle.com/wordsforthewise/lending-club)
-Dataset https://www.kaggle.com/wordsforthewise/lending-club 
+  
+This project goes through my processing for analyzing a 2.2 million row Dataset of approved financial loans.  The Dataset is available [here](https://www.kaggle.com/wordsforthewise/lending-club).
 
+## The Data
+The Dataset comes from LendingClub, a company that provides loans to consumers and businesses.  There is only consumer loan data in this Dataset, and it comes with all sorts of characteristics like FICO scores, annual income, employment history, loan amount, and interest rate.
+
+
+Fico scores from 600 - 850 only
+
+## Exploratory Data Analysis
 [R Shiny Dashboard](https://jyablonski.shinyapps.io/amazon-dashboard/)
 
 [Dataset](https://www.kaggle.com/wordsforthewise/lending-club)
@@ -19,3 +25,4 @@ Dataset https://www.kaggle.com/wordsforthewise/lending-club
 ![LoanDefaults3](https://user-images.githubusercontent.com/16946556/92037963-7b845900-ed27-11ea-8f9b-b485850e9738.png)
 ![LoanDistribution1](https://user-images.githubusercontent.com/16946556/92037964-7b845900-ed27-11ea-873c-4e070f4b8ba9.png)
 
+## Data Modeling

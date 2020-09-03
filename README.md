@@ -11,10 +11,12 @@ The Dataset comes from LendingClub, a company that provides loans to consumers a
 Fico scores from 600 - 850 only
 
 ## Exploratory Data Analysis
-[R Shiny Dashboard](https://jyablonski.shinyapps.io/amazon-dashboard/)
 
-[Dataset](https://www.kaggle.com/wordsforthewise/lending-club)
 ![employmentHistory6](https://user-images.githubusercontent.com/16946556/92037353-7d99e800-ed26-11ea-9ac5-4e4c84c42dec.png)
+
+The only meaningful insight to derive from employment history is that LendingClub isn't willing to take as much risk with consumers unwilling to provide details on their employment history.  You can see the average loan amount is considerably lower for these candidates relative to all the others.
+
+
 ![gradebreakdown](https://user-images.githubusercontent.com/16946556/92037354-7e327e80-ed26-11ea-9452-975e1caa6aa9.png)
 ![LoanAmounts2](https://user-images.githubusercontent.com/16946556/92037357-7e327e80-ed26-11ea-8d6c-1069a46e07f0.png)
 ![loanPurpose7](https://user-images.githubusercontent.com/16946556/92037359-7ecb1500-ed26-11ea-9487-8f607c279986.png)

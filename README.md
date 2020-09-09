@@ -5,7 +5,7 @@
 This project goes through my processing for analyzing a 2.2 million row Dataset of approved financial loans.  The motivation for this project came from applying to a financial loan company similar to the one that provides this Dataset, and wanting to get an idea of the kind of data these companies work with and get a head start how I could apply my skills to data I haven't worked with before.
 
 ## The Data
-[The Dataset](https://www.kaggle.com/wordsforthewise/lending-club) comes from LendingClub, a peer-to-peer lending company.  They pair investors with borrowers looking to get a loan.  The Investors get interest, the borrowers get their loan, and LendingClub makes money through origination & service fees.
+[The Dataset](https://www.kaggle.com/wordsforthewise/lending-club) comes from LendingClub, a peer-to-peer lending company.  They pair investors with borrowers looking to get a loan.  The Investors get interest, the borrowers get their loan, and LendingClub makes money by charging origination & service fees.
 
 There is only consumer loan data in this Dataset, and it comes with all sorts of characteristics of the client like FICO scores, annual income, employment history, and details of the loan like term length, loan amount, and interest rate.  All consumers in this dataset have FICO scores ranging from 600 - 850.  LendingClub also provides a "Grade" variable, which includes 7 unique groups that the company uses to grade the consumer based on their level of risk.  A Grade "A" client is likely to be a good client and to pay off their loan, while a Grade "G" client indicates a high level of risk and the most likely to default on the loan.  
 

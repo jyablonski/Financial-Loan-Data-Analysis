@@ -2,14 +2,14 @@
 
 ## Introduction
   
-This project goes through my processing for analyzing a 2.2 million row Dataset of approved financial loans.  The motivation for this project came from applying to a financial loan company similar to the one that provides this Dataset, and wanting to get an idea of the kind of data these companies work with and see how I could apply my skills to an industry that I wasn't familiar with.
+This project goes through my process of analyzing a 2.2 million row dataset of approved financial loans.  The motivation for this project came from applying to a financial loan company similar to the one that provides this dataset, and wanting to get an idea of the kind of data these companies work with and see how I could apply my skills to an industry that I wasn't familiar with.
 
 ## The Data
-[The Dataset](https://www.kaggle.com/wordsforthewise/lending-club) comes from LendingClub, a peer-to-peer lending company.  They pair investors with borrowers looking to get a loan.  The Investors get interest, the borrowers get their loan, and LendingClub makes money by charging origination & service fees.
+[The Dataset](https://www.kaggle.com/wordsforthewise/lending-club) comes from LendingClub, a peer-to-peer lending company.  They pair investors with borrowers looking to get a loan.  The investors get interest, the borrowers get their loan, and LendingClub makes money by charging origination & service fees for connecting the two entities together.  
 
-There is only consumer loan data in this Dataset, and it comes with all sorts of characteristics of the client like FICO scores, annual income, employment history, and details of the loan like term length, loan amount, and interest rate.  All consumers in this dataset have FICO scores ranging from 600 - 850.  LendingClub also provides a "Grade" variable, which includes 7 unique groups that the company uses to grade the consumer based on their level of risk.  A Grade "A" client is likely to be a good client and to pay off their loan, while a Grade "G" client indicates a high level of risk and the most likely to default on the loan.  
+The dataset comes with all sorts of characteristics of the client like credit scores, annual income, employment history, and details of the loan like term length, loan amount, and interest rate.  All consumers in this dataset have FICO scores ranging from 600 - 850.  LendingClub also provides a "Grade" variable, which includes 7 unique groups that the company uses to grade the consumer based on their level of risk, and LendingClub uses it to determine the interest rate of the loan.  A Grade "A" client is likely to be a good client is typically assigned the lower interest rates, while a Grade "G" client indicates a high level of risk and typically gets a higher interest rate.  
 
-The data only includes approved loans, not the ones that were rejected.  Every consumer in this Dataset was approved for the loan they requested and some have completed the terms of the loan, while others are still paying it off.  It's important to keep in mind that almost 40% of the loans in the Dataset are still current and not completed yet, so the number of defaults are likely to be higher than what is shown in the analysis as of right now.  
+The data only includes approved loans, not the ones that were rejected.  Every consumer in this dataset was approved for the loan they requested and some have completed the terms of the loan, while others are still paying it off.  It's important to keep in mind that almost 40% of the loans in the dataset are still current and not completed yet, so the number of defaults are likely to be higher than what is shown in the analysis as of right now.  
 
 ## Exploratory Data Analysis
 
@@ -63,9 +63,15 @@ This is the distribution of all loans handed out by LendingClub in this dataset.
 
 ## Data Modeling
 
-First Header | Second Header
------------- | -------------
-Content from cell 1 | Content from cell 2
+Continuous Variables | Categorical Variables
+-------------------- | ---------------------
+Loan Amount          | Loan Status
+Debt-to-Income Ratio | Employment History
+FICO Score           | Loan Purpose
+Term Length          | Grade
+Interest Rate        | 
+Annual Income        | 
+
 
 
 ## Insights & Recommendations

@@ -58,44 +58,48 @@ Boxplots help show the interest rate increasing linearly as the risk level incre
 
 ![int_ratedefault9](https://user-images.githubusercontent.com/16946556/92512297-714cd980-f1c3-11ea-9b1e-2297cbe1f7bf.png)
 
+Similar idea, as interest rates increase the % chance of default skyrockets.
+
 ![term_length10](https://user-images.githubusercontent.com/16946556/92512308-7578f700-f1c3-11ea-8feb-8a3488071e40.png)
+
+We can see as you jump from a 3 year loan to a 5 year loan, the # chance of default doubles from 15 to 31%.  This is likely due to those increased interest rates I previously spoke about, as well as a 5 year debt being more difficult to manage than a 3 year debt.  Regardless, it's not a surprise why LendingClub prefers borrowers to stay on 3 year loan plans.
 
 ![state plot 19](https://user-images.githubusercontent.com/16946556/92635652-0b2b8980-f28b-11ea-8a27-7633aa4087ee.png)
 
+This is a basic plot of Number of Loans per State, with the number of default loans in red.  It's not a surprise seeing California and New York leading the list, and I tried exploring other methods to see if there were any other insights to gather on State data but didn't find anything worth noting.  
 
-zzzzzzzzzzzzzzzzzzzzzzzzzz
 
-
-![roc curve final 16](https://user-images.githubusercontent.com/16946556/92634904-d3701200-f289-11ea-9f4a-8eaa976403bb.png)
-
-![xgb workflow](https://user-images.githubusercontent.com/16946556/92634909-d539d580-f289-11ea-8821-0f3df93e8b05.png)
-
-![variable importance v2](https://user-images.githubusercontent.com/16946556/92634926-dc60e380-f289-11ea-878d-791a5f7282f6.png)
-
-![XGboost hyperparameters 15](https://user-images.githubusercontent.com/16946556/92634937-e08d0100-f289-11ea-9c45-d5546f1be140.png)
-
+The Exploratory Analysis helped give me an idea of what variables are probably most important to predicting loan defaults, and which ones probably won't help me as I head into the Data Modeling phase.
 
 ## Data Modeling
 
-
-![roc curve final 16](https://user-images.githubusercontent.com/16946556/92634904-d3701200-f289-11ea-9f4a-8eaa976403bb.png)
-
-![xgb workflow](https://user-images.githubusercontent.com/16946556/92634909-d539d580-f289-11ea-8821-0f3df93e8b05.png)
-
-![variable importance v2](https://user-images.githubusercontent.com/16946556/92634926-dc60e380-f289-11ea-878d-791a5f7282f6.png)
-
-![XGboost hyperparameters 15](https://user-images.githubusercontent.com/16946556/92634937-e08d0100-f289-11ea-9c45-d5546f1be140.png)
-
+I used the tidymodels package in R to handle all of my data preprocessing, perform all of the machine learning algorithms, and handle all of the hyperparameter tuning.  I used a 75% Training, 25% Testing Split with 10 fold cross validation resampling, and tried out 6 different models.  Below is the list of variables I chose to utilize.
 
 Continuous Variables | Categorical Variables | Outcome Variable
 -------------------- | --------------------- | ---------------
 Loan Amount          | Grade                 | Loan Status
 Debt-to-Income Ratio | Employment History    |
-FICO Score           | Loan Purpose          |
+FICO Score           |                       |
 Term Length          | 
 Interest Rate        | 
 Annual Income        | 
 
+
+![roc curve final 16](https://user-images.githubusercontent.com/16946556/92634904-d3701200-f289-11ea-9f4a-8eaa976403bb.png)
+
+XGBoost, Logistic Regression, Random Forest, and SVM Models all gave similar results.
+
+![XGboost hyperparameters 15](https://user-images.githubusercontent.com/16946556/92634937-e08d0100-f289-11ea-9c45-d5546f1be140.png)
+
+This is a plot of the XGBoost hyperparameter tuning, the best parameters are automatically selected when using the select_best function from the tune package.
+
+![xgb workflow](https://user-images.githubusercontent.com/16946556/92634909-d539d580-f289-11ea-8821-0f3df93e8b05.png)
+
+This is the workflow for the XGBoost model.  The hyperparameter tuning took 3 hours and these parameters gave me the best accuracy.
+
+![variable importance v2](https://user-images.githubusercontent.com/16946556/92634926-dc60e380-f289-11ea-878d-791a5f7282f6.png)
+
+This is a variable importance plot using the vip package which helps explain which variables contributed the most to the model predictions.  It helps show that employment length didn't have much predictive power and that it should probably be removed in future model building.
 
 
 ## Insights & Recommendations

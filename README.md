@@ -103,6 +103,7 @@ This is a variable importance plot using the vip package which helps explain whi
 
 
 ## Insights & Recommendations
+Predicting loan defaults is hard !  Humans are difficult to figure out and while there is a lot of opportunity in these business models, you also have to keep in mind the risk of your clients defaulting.  If you hand too many loans out to customers who can't end up paying it back, you could risk your company going out of business.
 * Item 1
 * Item 2
   * Item 2a

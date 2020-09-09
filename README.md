@@ -51,6 +51,17 @@ This is the distribution of all loans handed out by LendingClub in this dataset.
 
 ![term_length10](https://user-images.githubusercontent.com/16946556/92512308-7578f700-f1c3-11ea-8feb-8a3488071e40.png)
 
+![state plot 18](https://user-images.githubusercontent.com/16946556/92634898-d23ee500-f289-11ea-96a9-dfd42e070e2a.png)
+
+![roc curve final 16](https://user-images.githubusercontent.com/16946556/92634904-d3701200-f289-11ea-9f4a-8eaa976403bb.png)
+
+![xgb workflow](https://user-images.githubusercontent.com/16946556/92634909-d539d580-f289-11ea-8821-0f3df93e8b05.png)
+
+![variable importance v2](https://user-images.githubusercontent.com/16946556/92634926-dc60e380-f289-11ea-878d-791a5f7282f6.png)
+
+![XGboost hyperparameters 15](https://user-images.githubusercontent.com/16946556/92634937-e08d0100-f289-11ea-9c45-d5546f1be140.png)
+
+
 ## Data Modeling
 
 

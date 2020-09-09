@@ -63,5 +63,9 @@ This is the distribution of all loans handed out by LendingClub in this dataset.
 
 ## Data Modeling
 
+First Header | Second Header
+------------ | -------------
+Content from cell 1 | Content from cell 2
+
 
 ## Insights & Recommendations

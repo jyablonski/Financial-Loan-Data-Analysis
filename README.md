@@ -2,7 +2,7 @@
 
 ## Introduction
   
-This project goes through my processing for analyzing a 2.2 million row Dataset of approved financial loans.  The motivation for this project came from applying to a financial loan company similar to the one that provides this Dataset, and wanting to get an idea of the kind of data these companies work with and get a head start how I could apply my skills to data I haven't worked with before.
+This project goes through my processing for analyzing a 2.2 million row Dataset of approved financial loans.  The motivation for this project came from applying to a financial loan company similar to the one that provides this Dataset, and wanting to get an idea of the kind of data these companies work with and see how I could apply my skills to an industry that I wasn't familiar with.
 
 ## The Data
 [The Dataset](https://www.kaggle.com/wordsforthewise/lending-club) comes from LendingClub, a peer-to-peer lending company.  They pair investors with borrowers looking to get a loan.  The Investors get interest, the borrowers get their loan, and LendingClub makes money by charging origination & service fees.

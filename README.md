@@ -101,7 +101,7 @@ This is the list of preprocessing steps I applied to the training data.  Correla
 
 ![roc curve final 16](https://user-images.githubusercontent.com/16946556/92634904-d3701200-f289-11ea-9f4a-8eaa976403bb.png)
 
-XGBoost, Logistic Regression, Random Forest, and SVM Models all gave similar results.  Moving forward I chose to use the XGBoost model as my final model.
+I chose to build XGBoost, Logistic Regression, Random Forest, Decision Tree, KNN, and SVM Models and compared them with an ROC Curve using their predictions after the resampling process.  These results aren't stellar, but KNN and Decision Trees were clearly lagging behind in terms of predictive power.  Moving forward I chose to use the XGBoost model as my final model.
 
 ![XGboost hyperparameters 15](https://user-images.githubusercontent.com/16946556/92634937-e08d0100-f289-11ea-9c45-d5546f1be140.png)
 

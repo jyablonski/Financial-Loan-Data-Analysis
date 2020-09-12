@@ -110,7 +110,7 @@ This is a plot of the XGBoost hyperparameter tuning, the best parameters are aut
 
 This is the workflow for the XGBoost model.  The hyperparameter tuning took 3 hours and these parameters gave me the best accuracy.
 
-![variable importance v2](https://user-images.githubusercontent.com/16946556/92634926-dc60e380-f289-11ea-878d-791a5f7282f6.png)
+![new vip plot 21](https://user-images.githubusercontent.com/16946556/93004095-bf7e1780-f4f8-11ea-826f-1de4d45f42b5.png)
 
 This is a variable importance plot using the vip package which helps explain which variables contributed the most to the model predictions.  It helps show that employment length didn't have much predictive power and that it should probably be removed in future model building.
 

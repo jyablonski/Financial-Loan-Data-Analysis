@@ -93,14 +93,15 @@ Term Length          |
 Interest Rate        | 
 Annual Income        | 
 
-![xgboost accuracy](https://user-images.githubusercontent.com/16946556/93003877-361a1580-f4f7-11ea-9a33-6c0ada6d42ac.png)
 
 ![plot 20](https://user-images.githubusercontent.com/16946556/93003894-4631f500-f4f7-11ea-9714-3788042fd986.png)
+
+This is the list of preprocessing steps I applied to the training data.  Correlation filter to make sure there's no multicolinearity, zero variance, and normalization of all numeric variables.
 
 
 ![roc curve final 16](https://user-images.githubusercontent.com/16946556/92634904-d3701200-f289-11ea-9f4a-8eaa976403bb.png)
 
-XGBoost, Logistic Regression, Random Forest, and SVM Models all gave similar results.
+XGBoost, Logistic Regression, Random Forest, and SVM Models all gave similar results.  Moving forward I chose to use the XGBoost model as my final model.
 
 ![XGboost hyperparameters 15](https://user-images.githubusercontent.com/16946556/92634937-e08d0100-f289-11ea-9c45-d5546f1be140.png)
 
@@ -110,16 +111,22 @@ This is a plot of the XGBoost hyperparameter tuning, the best parameters are aut
 
 This is the workflow for the XGBoost model.  The hyperparameter tuning took 3 hours and these parameters gave me the best accuracy.
 
+
+![xgboost accuracy](https://user-images.githubusercontent.com/16946556/93003877-361a1580-f4f7-11ea-9a33-6c0ada6d42ac.png)
+
+These are the accuracy numbers of the XGBoost model on the testing data.  81% accuracy and .70 AUC are not the most tremendous numbers, but we're getting somewhat reasonable levels of accurate prediction with this model.
+
+
 ![new vip plot 21](https://user-images.githubusercontent.com/16946556/93004095-bf7e1780-f4f8-11ea-826f-1de4d45f42b5.png)
 
-This is a variable importance plot using the vip package which helps explain which variables contributed the most to the model predictions.  It helps show that employment length didn't have much predictive power and that it should probably be removed in future model building.
+This is a variable importance plot using the vip package which helps explain which variables contributed the most to the model predictions.  It helps show that Loan Purpose didn't have much predictive power and that it should probably be removed in future model building.  This is probably due to almost all of the applicants using the loans for the same general purpose (debt consolidation).
 
 
 ## Insights & Recommendations
-Predicting loan defaults is hard !  Humans are difficult to figure out and while there is a lot of opportunity in these business models, you also have to keep in mind the risk of your clients defaulting.  If you hand too many loans out to customers who can't end up paying it back, you could risk your company going out of business.
-* Item 1
-* Item 2
-  * Item 2a
-  * Item 2b
-  
-variables i'd like to see added to see if there's any statistical impact to help:
+Predicting loan defaults is hard !  Lending companies have no idea which applicants are going to be able to pay out their loans or whether they're accepting a client who will end up defaulting and causing a headache for them.  Based on what I've learned from this project with regarding to the lending industry, I've laid out some
+* Keep track of all current oustanding loans, the associated Grade Types of the clients, and the term lengths of the loans.
+  * Don't hand too many loans or total $ out to any 1 Grade Type in particular at once, keep the portfolio diverse & spread out.
+* Set thresholds in the system for handing out too many loans of 1 type such as: 25% + interest rate, Grade G clients, and 5 year term length loans.
+  * Create warnings & alert systems when any of thresholds are about to be exceeded.
+
+Some variables I'd like to see added in future datasets that might help increase predictive power would be age & gender of the applicant, a more detailed report of their credit history, and in an ideal world it'd be really informative to see data of the clients that defaulted and get an idea of what factors led to them defaulting on their loan.  While not all of these characteristics might be meaningful, I believe some of them could help increase the predictive power of the modeling process and help the loan companies get a more accurate & realistic understanding of their clients which could improve the efficiency of the business.

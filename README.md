@@ -93,6 +93,10 @@ Term Length          |
 Interest Rate        | 
 Annual Income        | 
 
+![xgboost accuracy](https://user-images.githubusercontent.com/16946556/93003877-361a1580-f4f7-11ea-9a33-6c0ada6d42ac.png)
+
+![plot 20](https://user-images.githubusercontent.com/16946556/93003894-4631f500-f4f7-11ea-9714-3788042fd986.png)
+
 
 ![roc curve final 16](https://user-images.githubusercontent.com/16946556/92634904-d3701200-f289-11ea-9f4a-8eaa976403bb.png)
 

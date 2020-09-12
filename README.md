@@ -27,13 +27,16 @@ Annual Income        |
 
 This is the distribution of all loans handed out by LendingClub in this dataset.  They range from $1000 to $40,000, with the average being $15,047 and the median being $12,900. 
 
+
 ![employmentHistory6](https://user-images.githubusercontent.com/16946556/92037353-7d99e800-ed26-11ea-9ac5-4e4c84c42dec.png)
 
-The only meaningful insight to derive from employment history is that loan amounts are typically lower if the borrower doesn't provide an employment history.  Borrowers with 10+ years of work experience typically have a higher loan amount, but that's the only group that sees a difference.
+The only meaningful insight to derive from employment history is that loan amounts are typically lower if the borrower doesn't provide an employment history (NA).  Borrowers with 10+ years of work experience typically are given a higher loan amount, but that's the only group that sees a noticeable difference.
+
 
 ![gradebreakdown](https://user-images.githubusercontent.com/16946556/92037354-7e327e80-ed26-11ea-9452-975e1caa6aa9.png)
 
 Here is a basic informal table where you can see the breakdown of the average statistics by the Grade type of the consumer.  Interest rate, loan amount, and average term of the loan all increase as the Grade declines.  The default term length for a loan is 3 years, LendingClub charges higher fees and interest rates if a borrower tries getting a 5 year loan.  The table kind of gives you an idea of how LendingClub's proprietary grading system works.
+
 
 ![LoanAmounts2](https://user-images.githubusercontent.com/16946556/92037357-7e327e80-ed26-11ea-8d6c-1069a46e07f0.png)
 
@@ -44,13 +47,19 @@ This is a breakdown of how much total $ LendingClub has handed out to consumers 
 
 This is a similar graph, except showing # of loans rather than aggregate total $ of loans.  The text in black indicates the % Chance of Default for each individual Grade group.
 
+
 ![loanPurpose7](https://user-images.githubusercontent.com/16946556/92037359-7ecb1500-ed26-11ea-9487-8f607c279986.png)
 
 In the dataset is a variable called "purpose" which indicates the consumer's purpose for needing the loan.  The overwhelming majority seems to be clients who are looking to consolidate their debt or pay off other credit cards, which is an important insight to keep in mind.  These loans are being given to people who already have debt or have already taken on loans in the past that they can't pay off.
 
+
 ![LoanStatus4](https://user-images.githubusercontent.com/16946556/92037360-7ecb1500-ed26-11ea-8f44-0d52d9885470.png)
 
 The status of the loan indicates whether the clients have paid it off, whether they defaulted (the loan was Charged Off), or if it's still ongoing.
+
+
+Interest rates seemed to be the most significant predictor in identifying which loans are likely to default.  They range from 6% to 26% and there are a number of insights to develop from analyzing different interest rate related plots.
+
 ![boxplots5](https://user-images.githubusercontent.com/16946556/92037361-7ecb1500-ed26-11ea-9d69-2e7ce6519444.png)
 
 Boxplots help show the interest rate increasing linearly as the risk level increases for LendingClub based on the grade they've given to the consumer.

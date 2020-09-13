@@ -82,7 +82,7 @@ The Exploratory Analysis helped give me an idea of what variables are probably m
 
 ## Data Modeling
 
-I used the tidymodels package in R to handle all of my data preprocessing, perform all of the machine learning algorithms, and handle all of the hyperparameter tuning.  I used a 75% Training, 25% Testing Split with 10 fold cross validation resampling, and tried out 6 different models.  Below is the list of variables I chose to utilize.
+I used the tidymodels package in R to handle all of my data preprocessing, perform all of the machine learning algorithms, and handle all of the hyperparameter tuning.  I used a 75% Training, 25% Testing Split with 10 fold cross validation resampling, and tried out 6 different models.  I also only chose to use data observations that were completed loans (i.e. not current and still being paid out), and limited the size of my modeling dataset to 100,000 random rows to save on processing time.  Below is the list of variables I chose to utilize.
 
 Continuous Variables | Categorical Variables | Outcome Variable
 -------------------- | --------------------- | ---------------

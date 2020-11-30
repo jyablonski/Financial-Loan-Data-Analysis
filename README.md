@@ -123,6 +123,7 @@ This is a variable importance plot using the vip package which helps explain whi
 
 
 ## Insights & Recommendations
+
 Predicting loan defaults is hard !  Lending companies have no idea which applicants are going to be able to pay out their loans or whether they're accepting a client who will end up defaulting and causing a headache for them.  Based on what I've learned from this project with regarding to the lending industry, I've laid out some key recommendations as well as suggested improvements to help increase the productivity of these companies.
 
 * Keep track of all current oustanding loans, the associated Grade Types of the clients, and the term lengths of the loans.
